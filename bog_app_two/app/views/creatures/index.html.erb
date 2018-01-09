@@ -1,0 +1,11 @@
+<h1>Creatures Index</h1>
+
+<ul>
+  <% @creatures.each do |potato| %>
+    <li>
+      <%= link_to potato do %>
+        <%= potato.name%> - <%= potato.description%>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
